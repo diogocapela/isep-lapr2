@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC40OrganizerAssignsStaffMemberToApplicationUI">
+    <center>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="eventTableUC40">
+                    <columns>
+                        <TableColumn fx:id="eventTableUC40ColTitle" prefWidth="100.0" />
+                        <TableColumn fx:id="eventTableUC40ColDescription" prefWidth="150.0" />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets right="2.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                    </HBox.margin>
+                </TableView>
+                <Button mnemonicParsing="false" onAction="#handleSelectEventUC40" text="Select Event">
+                    <opaqueInsets>
+                        <Insets right="2.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                    </HBox.margin>
+                </Button>
+                <TableView fx:id="applicationTableUC40">
+                    <columns>
+                        <TableColumn fx:id="applicationTableUC40ColTradeName" prefWidth="150.0" />
+                        <TableColumn fx:id="applicationTableUC40ColDescription" prefWidth="150.0" />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets right="2.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                    </HBox.margin>
+                </TableView>
+                <TableView fx:id="staffMemberTableUC40" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="staffMemberTableUC40ColUserName" prefWidth="100.0" />
+                        <TableColumn fx:id="staffMemberTableUC40ColMail" prefWidth="100.0" />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets right="2.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                    </HBox.margin>
+                </TableView>
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </Separator>
+                <Button mnemonicParsing="false" onAction="#handleAssignStaffMemberUC40" text="Assign Staff Member to Application">
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </bottom>
+    <top>
+        <Label text="UC40 - Organizers Assign Staff Member to Review Application" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+    </top>
+</BorderPane>

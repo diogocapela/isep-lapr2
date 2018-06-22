@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applicationSet>
+  <application>
+    <companyTradeName>comp1</companyTradeName>
+    <vatNumber>123123123</vatNumber>
+    <phoneNumber>9351151</phoneNumber>
+    <accepted>false</accepted>
+    <description>app1</description><invitesQuantity>80</invitesQuantity><boothArea>100</boothArea>
+  </application>
+</applicationSet>

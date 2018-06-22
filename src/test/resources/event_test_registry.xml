@@ -1,0 +1,38 @@
+<eventRegistry>
+  <events>
+    <date>
+      <day>8</day>
+      <month>12</month>
+      <year>2018</year>
+    </date>
+    <deadline>
+      <day>8</day>
+      <month>5</month>
+      <year>2018</year>
+    </deadline>
+    <description>Melhor evento de sempre</description>
+    <id>1</id>
+    <isOpenToApplications>false</isOpenToApplications>
+    <location>Porto</location>
+    <title>Motard Gathering 05</title>
+    <type>exhibition</type>
+  </events>
+  <events>
+    <date>
+      <day>9</day>
+      <month>6</month>
+      <year>2000</year>
+    </date>
+    <deadline>
+      <day>6</day>
+      <month>2</month>
+      <year>2000</year>
+    </deadline>
+    <description>3</description>
+    <id>10</id>
+    <isOpenToApplications>false</isOpenToApplications>
+    <location>5</location>
+    <title>2</title>
+    <type>exhibition</type>
+  </events>
+</eventRegistry>

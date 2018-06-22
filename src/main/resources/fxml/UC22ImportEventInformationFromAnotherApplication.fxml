@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC22ImportEventInformationFromAnotherApplicationUI">
+    <center>
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <Button onAction="#handleImportFromXMLFile" text="Import from XML File" />
+            </children>
+        </HBox>
+    </center>
+   <top>
+          <Label text="UC22 - Import Event Information from Another Application" BorderPane.alignment="CENTER">
+              <font>
+                  <Font name="System Bold" size="20.0" />
+              </font>
+          </Label>
+   </top>
+</BorderPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC08SubmitWorkshopSurveyUI">
+    <center>
+        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Select an Event" />
+                <HBox alignment="CENTER">
+                    <children>
+                        <ChoiceBox fx:id="inputEventChoiceBox" prefWidth="150.0" />
+                    </children>
+                </HBox>
+                <Label text="Select the Workshops you Want to Attend" />
+                <ListView fx:id="inputWorkshopsListView" />
+                <Button mnemonicParsing="false" onAction="#handleSubmitSurvey" text="Submit Survey">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></Button>
+            </children>
+        </VBox>
+    </center>
+   <top>
+          <Label text="UC08 - Submit Workshop Survey" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

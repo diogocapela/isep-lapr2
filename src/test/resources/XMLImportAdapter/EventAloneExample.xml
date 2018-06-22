@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<event>
+  <id>1</id>
+  <type>exhibition</type>
+  <title>exh1</title>
+  <eventDescription>desc1</eventDescription>
+  <location>local1</location>
+  <date>2000/2/2</date>
+  <deadline>1990/3/3</deadline>
+  <isOpenToApplications>false</isOpenToApplications>
+</event>

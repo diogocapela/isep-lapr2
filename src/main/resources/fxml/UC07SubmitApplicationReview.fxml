@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC07SubmitApplicationReviewUI">
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="530.0">
+         <children>
+            <ComboBox fx:id="cboEvent" layoutX="111.0" layoutY="51.0" onAction="#cboEventSelect" prefHeight="26.0" prefWidth="377.0" />
+            <ComboBox fx:id="cboApplication" layoutX="111.0" layoutY="91.0" onAction="#cboApplicationSelect" prefHeight="26.0" prefWidth="377.0" />
+            <CheckBox fx:id="chkAccept" layoutX="32.0" layoutY="295.0" mnemonicParsing="false" text="Accept this application" />
+            <TextField fx:id="txtJustification" layoutX="27.0" layoutY="328.0" prefHeight="148.0" prefWidth="457.0" promptText="Justification" />
+            <Label layoutX="27.0" layoutY="56.0" text="Event:" />
+            <Label layoutX="27.0" layoutY="94.0" text="Application:" />
+            <Label layoutX="252.0" layoutY="296.0" text="Justification:" />
+            <VBox layoutX="27.0" layoutY="133.0" prefHeight="88.0" prefWidth="211.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="195.0" text="Topic Knowledge:" />
+                  <Label prefHeight="16.0" prefWidth="173.0" text="Event Adequacy:" />
+                  <Label lineSpacing="5.0" prefHeight="16.0" prefWidth="173.0" text="Invite Adequacy:" />
+                  <Label text="Requested Stand Area:" />
+                  <Label text="Overall Recommendation:" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox layoutX="238.0" layoutY="137.0" prefHeight="148.0" prefWidth="108.0" spacing="2.0">
+               <children>
+                  <TextField fx:id="txtstkr" promptText="0 to 5" />
+                  <TextField fx:id="txtear" promptText="0 to 5" />
+                  <TextField fx:id="txtia" promptText="0 to 5" />
+                  <TextField fx:id="txtrsa" promptText="0 to 5" />
+                  <TextField fx:id="txtor" promptText="0 to 5" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Label text="UC07 - Submit Application Review" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#btnSubmitClick" text="Submit Application Review" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

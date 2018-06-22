@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC17ListEventStandsInformationUI">
+    <center>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="eventTableUC17">
+                    <columns>
+                        <TableColumn fx:id="eventTableUC17ColTitle" prefWidth="175.0" />
+                        <TableColumn fx:id="eventTableUC17ColDescription" prefWidth="200.0" />
+                    </columns>
+                </TableView>
+                <VBox fx:id="vBoxUC17BarChart" alignment="CENTER">
+                    <children>
+                        <BarChart fx:id="barChartUC17" minHeight="500" minWidth="500" title="Frequency Distribution Table">
+                            <xAxis>
+                                <CategoryAxis fx:id="barChartUC17CategoryAxis" label="Interval Range" side="BOTTOM" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis fx:id="barChartUC17NumberAxis" label="Amount of Stands per Interval Range" side="LEFT" />
+                            </yAxis>
+                        </BarChart>
+                        <Label fx:id="labelListStandInfo" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </Separator>
+                  <Button mnemonicParsing="false" onAction="#handleListButton" text="List Event's Stand Information" />
+            </children>
+        </VBox>
+    </bottom>
+   <top>
+      <Label text="UC17 - List Event Stands Information" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

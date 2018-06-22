@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC16ListEventTopicsUI">
+    <top>
+        <VBox alignment="CENTER">
+            <children>
+                <Label text="UC16 - List Event Topics">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+                </Label>
+                <Label text="Select an Event:">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Label>
+                <ChoiceBox fx:id="eventsChoiceBox" prefWidth="150.0">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </ChoiceBox>
+            <Label layoutX="236.0" layoutY="50.0" text="Select an Application Status:">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </Label>
+                <ChoiceBox fx:id="statusChoiceBox" prefWidth="150.0" />
+                <Button onAction="#handleShowDataForSelectedEvent" text="Show Data for this Event">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <HBox alignment="CENTER">
+            <children>
+                <PieChart fx:id="pieChart" />
+                <TableView fx:id="table" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="col1" text="Rank" />
+                        <TableColumn fx:id="col2" text="Topic" />
+                        <TableColumn fx:id="col3" text="Count" />
+                        <TableColumn fx:id="col4" text="Percentage" />
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<review>
+    <text></text>
+    <staffTopicKnowledge>0</staffTopicKnowledge>
+    <eventAdequacy>0</eventAdequacy>
+    <inviteAdequacy>0</inviteAdequacy>
+    <recommendation>0</recommendation>
+    <requestedStandAreaRating>0</requestedStandAreaRating>
+    <decision>rejected</decision>
+    <assignment>
+        <staff>
+            <user>
+                <isAdmin>false</isAdmin>
+            </user>
+        </staff>
+    </assignment>
+</review>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+            minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="lapr.project.ui.MenuUI">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Main">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openDashboard" text="Dashboard"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openLogger" text="Logger"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" onAction="#exitAppAndSave" text="Save and Exit"/>
+                        <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Quit without Saving"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="01—09">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC01CreateEvent" text="UC01 Create Event"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC02AssignStaffMemberToEvent"
+                                  text="UC02 Assign Staff Member to Event"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC03StartAnEventsApplicationSubmissionPeriod"
+                                  text="UC03 Start an Event’s Application Submission Period"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC04UserRegistration"
+                                  text="UC04 User Registration"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC05SubmitApplicationToEvent"
+                                  text="UC05 Submit Application to Event"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC06UpdateOrWithdrawApplication"
+                                  text="UC06 Update or Withdraw Application"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC07SubmitApplicationReview"
+                                  text="UC07 Submit Application Review"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC08SubmitWorkshopSurvey"
+                                  text="UC08 Submit Workshop Survey"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="10—19">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openUCXXListEventApplications"
+                                  text="UCXX List Event Applications"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC16ListEventTopics"
+                                  text="UC16 List Event Topics"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC17ListEventStandsInformation"
+                                  text="UC17 List Event Stands Information"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="20—29">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openUCXXBackupManager" text="UCXX Backup Manager"/>
+                        <MenuItem mnemonicParsing="false"
+                                  onAction="#openUC22ImportEventInformationFromAnotherApplication"
+                                  text="UC22 Import Event Information from Another Application"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="30—39">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC30ShowEventAcceptanceRate"
+                                  text="UC30 Show Event Acceptance Rate"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC31ShowStaffMemberMeanRating"
+                                  text="UC31 Show a Staff Member Mean Rating"/>
+                        <MenuItem mnemonicParsing="false"
+                                  onAction="#openUC32ShowDeviationBetweenStaffAverageRatingForEventMean"
+                                  text="UC32 Show the Mean Deviation Between Staff Members' Average Ratings and Event’s Mean Rating"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC33ListWorkshopsMapColouring"
+                                  text="UC33 List Workshops Map Colouring"/>
+                        <MenuItem mnemonicParsing="false"
+                                  onAction="#openUC34CalculateMinimumAmountOfNecessaryElectricalCable"
+                                  text="UC34 Calculate Minimum Amount of Necessary Electrical Cable"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="40—49">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC40OrganizerAssignsStaffMemberToApplication"
+                                  text="UC40 Organizer Assigns Staff Member to Application"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openUC41AcceptOrRejectApplication"
+                                  text="UC41 Accept or Reject Application"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

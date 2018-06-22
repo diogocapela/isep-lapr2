@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.DashboardUI">
+    <center>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <VBox fx:id="loginBox" alignment="CENTER">
+                    <children>
+                        <Label text="Username / Email" />
+                        <TextField fx:id="usernameOrEmailInput">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label text="Password" />
+                        <PasswordField fx:id="passwordInput" onKeyPressed="#keyPressedPw">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                        </PasswordField>
+                        <Button mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+                    </children>
+                </VBox>
+                <VBox fx:id="logoutBox" alignment="CENTER">
+                    <children>
+                        <Label text="Logged in as:">
+                            <VBox.margin>
+                                <Insets bottom="25.0" />
+                            </VBox.margin>
+                        </Label>
+                        <HBox>
+                            <children>
+                                <Label text="Username:" underline="true">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="loggedInUsername" />
+                            </children>
+                        </HBox>
+                        <HBox>
+                            <children>
+                                <Label text="Email:" underline="true">
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="loggedInEmail" />
+                            </children>
+                        </HBox>
+                        <HBox>
+                            <children>
+                                <Label text="Name:" underline="true">
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="loggedInName" />
+                            </children>
+                        </HBox>
+                        <HBox>
+                            <children>
+                                <Label text="Event Manager:" underline="true">
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="loggedInIsAdmin" />
+                            </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" onAction="#handleLogout" text="Logout">
+                            <VBox.margin>
+                                <Insets top="25.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC03StartAnEventsApplicationSubmissionPeriodUI">
+    <center>
+        <VBox alignment="CENTER">
+            <children>
+                <TableView fx:id="table">
+                    <columns>
+                        <TableColumn fx:id="colTitle" text="Title" />
+                        <TableColumn fx:id="colDescription" text="Description" />
+                        <TableColumn fx:id="colIsOpenToApplications" prefWidth="150.0" text="Open to Applications" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" spacing="10.0">
+            <children>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Button onAction="#handleStartEventApplicationSubmissionPeriod" text="Start Application Submission Period" />
+                        <Button onAction="#handleStopEventApplicationSubmissionPeriod" text="Stop Application Submission Period" />
+                    </children>
+                </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="25.0" top="5.0" />
+            </BorderPane.margin>
+        </VBox>
+    </bottom>
+   <top>
+          <Label text="UC03 - Start an Event's Application Submission Period" BorderPane.alignment="CENTER">
+              <font>
+                  <Font name="System Bold" size="20.0" />
+              </font>
+          </Label>
+   </top>
+</BorderPane>

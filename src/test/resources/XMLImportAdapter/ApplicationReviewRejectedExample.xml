@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<review>
+    <text>I approve it.</text>
+    <staffTopicKnowledge>5</staffTopicKnowledge>
+    <eventAdequacy>5</eventAdequacy>
+    <inviteAdequacy>5</inviteAdequacy>
+    <recommendation>5</recommendation>
+    <requestedStandAreaRating>5</requestedStandAreaRating>
+    <decision>rejected</decision>
+    <assignment>
+        <staff>
+            <user>
+                <username>capeladiogo</username>
+                <email>capeladiogo@gmail.com</email>
+                <password>0.0737021364</password>
+                <name>Diogo Capela</name>
+                <isAdmin>false</isAdmin>
+            </user>
+        </staff>
+    </assignment>
+</review>

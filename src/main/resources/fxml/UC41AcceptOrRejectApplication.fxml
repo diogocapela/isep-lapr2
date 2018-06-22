@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC41AcceptOrRejectApplicationUI">
+    <top>
+        <Label text="UC41 - Accept or Reject Application" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER">
+                    <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </HBox.margin>
+                    <children>
+                        <Label text="Event">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="eventComboBoxUC41" prefWidth="150.0" />
+                    </children>
+                </VBox>
+                <TableView fx:id="applicationTableUC41">
+                    <columns>
+                        <TableColumn fx:id="applicationTableUC41ColTradeName" minWidth="150.0" prefWidth="-1.0" />
+                        <TableColumn fx:id="applicationTableUC41ColDescription" minWidth="150.0" prefWidth="-1.0" />
+                        <TableColumn fx:id="applicationTableUC41ColIsAccepted" minWidth="125.0" prefWidth="-1.0" />
+                    </columns>
+                    <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </HBox.margin>
+                </TableView>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+            </BorderPane.margin>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <Separator>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </Separator>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleAcceptApplication" text="Accept Application">
+                            <HBox.margin>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleRejectApplication" text="Reject Application">
+                            <HBox.margin>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+</BorderPane>

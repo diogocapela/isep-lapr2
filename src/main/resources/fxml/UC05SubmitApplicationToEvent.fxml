@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC05SubmitApplicationToEventUI">
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="1054.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="275.0" layoutX="6.0" layoutY="521.0" stroke="BLACK" strokeType="INSIDE" width="1028.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="316.0" layoutX="5.0" layoutY="202.0" stroke="BLACK" strokeType="INSIDE" width="1028.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="99.0" layoutX="5.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" width="1028.0" />
+            <ComboBox fx:id="cboLstEvents" layoutX="17.0" layoutY="56.0" prefHeight="26.0" prefWidth="492.0" />
+            <Label layoutX="14.0" layoutY="30.0" prefHeight="16.0" prefWidth="150.0" text="Select an event:" />
+            <Button fx:id="btnRefresh" layoutX="130.0" layoutY="25.0" mnemonicParsing="false" onAction="#refreshCboEvents" text="Refresh" />
+            <TextField fx:id="txtCompanyTradeName" layoutX="215.0" layoutY="108.0" prefHeight="26.0" prefWidth="241.0" />
+            <TextField fx:id="txtVAT" layoutX="560.0" layoutY="107.0" prefHeight="26.0" prefWidth="150.0" />
+            <TextField fx:id="txtIntendedArea" layoutX="218.0" layoutY="145.0" prefHeight="26.0" prefWidth="47.0" />
+            <Label layoutX="14.0" layoutY="112.0" text="Company trade name:" />
+            <Label layoutX="466.0" layoutY="112.0" text="VAT number:" />
+            <Label layoutX="13.0" layoutY="150.0" text="Intended Area (square meters):" />
+            <ListView fx:id="lstProducts" layoutX="348.0" layoutY="251.0" prefHeight="122.0" prefWidth="653.0" />
+            <Button fx:id="btnAddProduct" layoutX="19.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnAddProductClick" prefHeight="26.0" prefWidth="100.0" text="Add product" />
+            <Button fx:id="btnRemoveProduct" layoutX="127.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnRemoveProductClick" text="Remove selected" />
+            <TextField fx:id="txtProduct" layoutX="17.0" layoutY="251.0" prefHeight="26.0" prefWidth="241.0" />
+            <Label layoutX="13.0" layoutY="218.0" text="List of products:" />
+            <TextField fx:id="txtPhoneNumber" layoutX="830.0" layoutY="107.0" prefHeight="26.0" prefWidth="139.0" />
+            <TextField fx:id="txtInventations" layoutX="447.0" layoutY="145.0" prefHeight="26.0" prefWidth="139.0" />
+            <Label layoutX="720.0" layoutY="112.0" text="Phone number:" />
+            <Label layoutX="274.0" layoutY="150.0" prefHeight="16.0" prefWidth="185.0" text="Number of Inventations:" />
+            <ListView fx:id="lstKeywords" layoutX="351.0" layoutY="383.0" prefHeight="122.0" prefWidth="653.0" />
+            <Button fx:id="btnAddKeyword" layoutX="18.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnAddKeywordClick" prefHeight="26.0" prefWidth="124.0" text="Add keyword" />
+            <Button fx:id="btnRemoveKeyword" layoutX="150.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnRemoveKeywordClick" text="Remove selected" />
+            <TextField fx:id="txtKeyword" layoutX="17.0" layoutY="411.0" prefHeight="26.0" prefWidth="265.0" />
+            <Label layoutX="17.0" layoutY="382.0" text="List of keywords:" />
+            <Button fx:id="btnSubmit" layoutX="696.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnSubmitClick" prefHeight="58.0" prefWidth="296.0" text="Submit application to selected event" />
+            <ListView fx:id="lstWorkshop" layoutX="360.0" layoutY="569.0" prefHeight="215.0" prefWidth="653.0" />
+            <Button fx:id="btnAddWorkshop" layoutX="360.0" layoutY="533.0" mnemonicParsing="false" onAction="#btnAddWorkshopClick" prefHeight="26.0" prefWidth="131.0" text="Add workshop" />
+            <Button fx:id="btnRemoveWorkshop" layoutX="508.0" layoutY="533.0" mnemonicParsing="false" onAction="#btnRemoveWorkshopClick" prefHeight="26.0" prefWidth="153.0" text="Remove selected" />
+            <TextField fx:id="txtWorkshopTitle" layoutX="107.0" layoutY="526.0" prefHeight="26.0" prefWidth="241.0" />
+            <TextField fx:id="txtWorkshopDescription" layoutX="107.0" layoutY="557.0" prefHeight="26.0" prefWidth="241.0" />
+            <TextField fx:id="txtWorkshopRoom" layoutX="107.0" layoutY="587.0" prefHeight="26.0" prefWidth="47.0" />
+            <Label layoutX="26.0" layoutY="530.0" text="Title:" />
+            <Label layoutX="26.0" layoutY="561.0" text="Description:" />
+            <Label layoutX="28.0" layoutY="592.0" text="Room:" />
+            <TextField fx:id="txtWorkshopDuration" layoutX="227.0" layoutY="587.0" prefHeight="26.0" prefWidth="47.0" />
+            <Label layoutX="162.0" layoutY="592.0" text="Duration:" />
+            <Label layoutX="24.0" layoutY="626.0" text="Necessary equipments:" />
+            <TextField fx:id="txtEquipments" layoutX="186.0" layoutY="621.0" prefHeight="26.0" prefWidth="163.0" />
+            <ListView fx:id="lstNecessaryEquipment" layoutX="23.0" layoutY="690.0" prefHeight="91.0" prefWidth="321.0" />
+            <Button fx:id="btnAddNecessaryEquipment" layoutX="21.0" layoutY="655.0" mnemonicParsing="false" onAction="#btnAddNecessaryEquipmentClick" prefHeight="26.0" prefWidth="124.0" text="Add equipment" />
+            <Button fx:id="btnRemoveNecessaryEquipment" layoutX="159.0" layoutY="655.0" mnemonicParsing="false" onAction="#btnRemoveNecessaryEquipmentClick" prefHeight="26.0" prefWidth="139.0" text="Remove selected" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Label text="UC05 - Submit Application to Event" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC31ShowStaffMemberMeanRatingUI">
+    <center>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+                    <TableView fx:id="userTableUC31" prefWidth="-1">
+                        <columns>
+                            <TableColumn fx:id="userTableUC31ColUsername" prefWidth="125.0" />
+                            <TableColumn fx:id="userTableUC31ColMail" prefWidth="125.0" />
+                        </columns>
+                    </TableView>
+         </children>
+      </HBox>
+    </center>
+   <bottom>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+                <Separator>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+                </Separator>
+                <Button mnemonicParsing="false" onAction="#handleCalculateButton" text="Calculate">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </Button>
+                <Label fx:id="labelCalculateResult">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <Label text="UC31 - Show Staff Member's Mean Rating" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

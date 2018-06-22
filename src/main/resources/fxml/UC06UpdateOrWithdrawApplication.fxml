@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC06UpdateOrWithdrawApplicationUI">
+    <top>
+        <Label text="UC06 - Update Or Withdraw Application" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER">
+                    <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </HBox.margin>
+                    <children>
+                        <Label text="Event">
+                            <VBox.margin>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="eventComboBoxUC06" prefWidth="150.0">
+                            <VBox.margin>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <Label />
+                        <Label text="Application">
+                            <VBox.margin>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="applicationComboBoxUC06" prefWidth="150.0">
+                            <VBox.margin>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                    </children>
+                </VBox>
+                <Separator orientation="VERTICAL">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                    </HBox.margin>
+                </Separator>
+                <VBox alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Company Trade Name">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="textFieldUC06TradeName">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Description">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextArea fx:id="textAreaUC06Description" prefHeight="50.0" prefWidth="220.0">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </TextArea>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="VAT Number">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="textFieldUC06VATNumber">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Phone Number">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="textFieldUC06PhoneNumber">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Number of Invitations">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="textFieldUC06NumberInvitations">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Intended Stand Area">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="textFieldUC06StandArea">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Topics" />
+                                <VBox alignment="CENTER">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                    <children>
+                                        <TextField fx:id="textFieldUC06Keyword">
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <Button mnemonicParsing="false" onAction="#handleAddKeyword" text="Add Topic">
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                    <children>
+                                        <ListView fx:id="listViewUC06Keywords" prefHeight="100.0">
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </VBox.margin>
+                                        </ListView>
+                                        <Button mnemonicParsing="false" onAction="#handleRemoveKeyword" text="Remove Topic">
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Display Products" />
+                                <VBox alignment="CENTER">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                    <children>
+                                        <TextField fx:id="textFieldUC06DisplayProduct">
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <Button mnemonicParsing="false" onAction="#handleAddDisplayProduct" text="Add Display Product">
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                    <children>
+                                        <ListView fx:id="listViewUC06DisplayProducts" prefHeight="100.0">
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </VBox.margin>
+                                        </ListView>
+                                        <Button mnemonicParsing="false" onAction="#handleRemoveDisplayProduct" text="Remove Display Product">
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <Separator>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </Separator>
+                        <HBox alignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </VBox.margin>
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#handleUpdateButton" text="Update Application">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#handleWithdrawButton" text="Withdraw Application">
+                                    <HBox.margin>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

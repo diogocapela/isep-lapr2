@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC33ListWorkshopsMapColouringUI">
+    <center>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="eventTableUC33">
+                    <columns>
+                        <TableColumn fx:id="eventTableUC33ColTitle" minWidth="150.0" prefWidth="-1.0" />
+                        <TableColumn fx:id="eventTableUC33ColDescription" minWidth="100.0" prefWidth="-1.0" />
+                    </columns>
+                    <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </HBox.margin>
+                </TableView>
+                <Separator orientation="VERTICAL">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Separator>
+                <TableView fx:id="workshopDegreeColorTableUC33">
+                    <columns>
+                        <TableColumn fx:id="workshopDegreeColorTableUC33ColName" prefWidth="150.0" />
+                        <TableColumn fx:id="workshopDegreeColorTableUC33ColAmountInterested" prefWidth="200.0" style="-fx-alignment: CENTER" />
+                        <TableColumn fx:id="workshopDegreeColorTableUC33ColVertexDegree" prefWidth="150.0" style="-fx-alignment: CENTER" />
+                        <TableColumn fx:id="workshopDegreeColorTableUC33ColMapColor" prefWidth="200.0" style="-fx-alignment: CENTER" />
+                    </columns>
+                    <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </HBox.margin>
+                </TableView>
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </Separator>
+                <Button mnemonicParsing="false" onAction="#handleListButton" prefWidth="250.0" text="List Event Workshop's Map Colouring">
+                    <VBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </bottom>
+   <top>
+      <Label text="UC33 - List Workshops Map Colouring" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

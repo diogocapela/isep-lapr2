@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <companyTradeName>comp2</companyTradeName>
+    <vatNumber>123123123</vatNumber>
+    <phoneNumber>9351151</phoneNumber>
+    <invitesQuantity>150</invitesQuantity>
+    <boothArea>90</boothArea>
+    <accepted>false</accepted>
+    <description>app2</description>
+    <assignedStand>
+        <stand>
+            <description>stand2</description>
+            <area>20</area>
+            <relativeDistanceSet>
+                <distance>
+                    <description>stand1</description>
+                    <value>50</value>
+                </distance>
+            </relativeDistanceSet>
+        </stand>
+    </assignedStand>
+    <invitesQuantity>158</invitesQuantity>
+    <status>accepted</status>
+    <reviews>
+        <review>
+            <text>I approve it.</text>
+            <staffTopicKnowledge>5</staffTopicKnowledge>
+            <eventAdequacy>5</eventAdequacy>
+            <inviteAdequacy>5</inviteAdequacy>
+            <recommendation>5</recommendation>
+            <requestedStandAreaRating>5</requestedStandAreaRating>
+            <decision>accepted</decision>
+            <assignment>
+                <staff>
+                    <user>
+                        <username>capeladiogo</username>
+                        <email>capeladiogo@gmail.com</email>
+                        <password>0.0737021364</password>
+                        <name>Diogo Capela</name>
+                        <isAdmin>false</isAdmin>
+                    </user>
+                </staff>
+            </assignment>
+        </review>
+    </reviews>
+    <workshops>
+        <workshop>
+            <title>workshop2</title>
+            <description>workshop desc 2</description>
+            <duration>20</duration>
+            <necessaryEquipment>Water</necessaryEquipment>
+            <interestedUsers>
+                <user>
+                    <username>capeladiogo</username>
+                    <email>capeladiogo@gmail.com</email>
+                    <password>0.0737021364</password>
+                    <name>Diogo Capela</name>
+                    <isAdmin>false</isAdmin>
+                </user>
+                <user>
+                    <username>vitor</username>
+                    <email>vse@gmail.com</email>
+                    <password>.0000000</password>
+                    <name>ve vi vi</name>
+                    <isAdmin>false</isAdmin>
+                </user>
+            </interestedUsers>
+        </workshop>
+    </workshops>
+    <topics>
+        <topic>Banana</topic>
+    </topics>
+    <displayProducts>
+        <displayProduct>    
+            <name>dproduct1</name>
+        </displayProduct>
+    </displayProducts>
+</application>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.UC02AssignStaffMemberToEventUI">
+    <center>
+        <VBox alignment="CENTER">
+            <children>
+                <Label text="UC02 - Assign Staff Member to Event">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="35.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER">
+                    <children>
+                        <VBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <Label text="User" />
+                                <ChoiceBox fx:id="usersChoiceBox" prefWidth="150.0" />
+                            </children>
+                            <HBox.margin>
+                                <Insets right="5.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <Label text="Event" />
+                                <ChoiceBox fx:id="eventsChoiceBox" prefWidth="150.0" />
+                            </children>
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Button onAction="#handleAddUserToStaffMembers" text="Assign User as a Staff Member" />
+                        <Button onAction="#handleDeleteUserFromStaffMembers" text="Delete User from the Staff Members" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="45.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

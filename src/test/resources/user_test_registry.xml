@@ -1,0 +1,16 @@
+<userRegistry>
+  <users>
+    <email>mail@mail.com</email>
+    <isAdmin>true</isAdmin>
+    <name>Nome</name>
+    <password>0.0737021364</password>
+    <username>username</username>
+  </users>
+  <users>
+    <email>2</email>
+    <isAdmin>false</isAdmin>
+    <name>4</name>
+    <password>12345678</password>
+    <username>1</username>
+  </users>
+</userRegistry>
